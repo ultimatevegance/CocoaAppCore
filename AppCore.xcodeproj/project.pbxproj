@@ -14,6 +14,7 @@
 		1CE12B642B20A6A5004A8CE0 /* AppCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12B632B20A6A5004A8CE0 /* AppCoreTests.swift */; };
 		1CE12B6E2B20A6A5004A8CE0 /* AppCoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12B6D2B20A6A5004A8CE0 /* AppCoreUITests.swift */; };
 		1CE12B702B20A6A5004A8CE0 /* AppCoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12B6F2B20A6A5004A8CE0 /* AppCoreUITestsLaunchTests.swift */; };
+		1CE12B7E2B20A6E9004A8CE0 /* CocoaJetpack in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE12B7D2B20A6E9004A8CE0 /* CocoaJetpack */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		1CE12B692B20A6A5004A8CE0 /* AppCoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppCoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE12B6D2B20A6A5004A8CE0 /* AppCoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreUITests.swift; sourceTree = "<group>"; };
 		1CE12B6F2B20A6A5004A8CE0 /* AppCoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CE12B7F2B20A701004A8CE0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE12B7E2B20A6E9004A8CE0 /* CocoaJetpack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +78,7 @@
 		1CE12B452B20A6A4004A8CE0 = {
 			isa = PBXGroup;
 			children = (
+				1CE12B7F2B20A701004A8CE0 /* README.md */,
 				1CE12B502B20A6A4004A8CE0 /* AppCore */,
 				1CE12B622B20A6A5004A8CE0 /* AppCoreTests */,
 				1CE12B6C2B20A6A5004A8CE0 /* AppCoreUITests */,
@@ -145,6 +149,9 @@
 			dependencies = (
 			);
 			name = AppCore;
+			packageProductDependencies = (
+				1CE12B7D2B20A6E9004A8CE0 /* CocoaJetpack */,
+			);
 			productName = AppCore;
 			productReference = 1CE12B4E2B20A6A4004A8CE0 /* AppCore.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +224,9 @@
 				Base,
 			);
 			mainGroup = 1CE12B452B20A6A4004A8CE0;
+			packageReferences = (
+				1CE12B7C2B20A6E9004A8CE0 /* XCRemoteSwiftPackageReference "CocoaJetpack" */,
+			);
 			productRefGroup = 1CE12B4F2B20A6A4004A8CE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -617,6 +627,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1CE12B7C2B20A6E9004A8CE0 /* XCRemoteSwiftPackageReference "CocoaJetpack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ultimatevegance/CocoaJetpack";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1CE12B7D2B20A6E9004A8CE0 /* CocoaJetpack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CE12B7C2B20A6E9004A8CE0 /* XCRemoteSwiftPackageReference "CocoaJetpack" */;
+			productName = CocoaJetpack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1CE12B462B20A6A4004A8CE0 /* Project object */;
 }
